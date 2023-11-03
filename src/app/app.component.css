@@ -19,6 +19,26 @@ h6 {
 
 p {
   margin: 0;
+  font-size: 2rem;
+}
+
+.all {  
+  display: flex;  
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 2rem 2rem 1rem;
+  border: solid 5px yellow;
+}
+
+.d-flex {
+  display: flex;
+  gap: 2rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .spacer {

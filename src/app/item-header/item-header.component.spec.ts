@@ -1,0 +1,21 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { ItemHeaderComponent } from './item-header.component';
+
+describe('ItemHeaderComponent', () => {
+  let component: ItemHeaderComponent;
+  let fixture: ComponentFixture<ItemHeaderComponent>;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [ItemHeaderComponent]
+    });
+    fixture = TestBed.createComponent(ItemHeaderComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

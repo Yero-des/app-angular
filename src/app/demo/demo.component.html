@@ -1,0 +1,29 @@
+<div class="container">
+  <table>
+    <tr>
+      <td>
+        <p class="title">Empleados:</p>
+      </td>
+      <td>
+        <p class="title">¿Mayor de edad?</p>
+      </td>
+      <td>
+        <p class="title">¿Tiene mascota?</p>
+      </td>
+    </tr>
+    <tr *ngFor="let person of peoplelist">
+      <td>
+        <p>This person {{ person.name }} is {{ person.age }} years old</p>
+      </td>
+      <td>
+        <p *ngIf="person.age >= 18">Si</p>
+        <p *ngIf="person.age < 18">No</p>
+      </td>
+      <td>
+        <p *ngIf="person.pet">Si</p>
+        <p *ngIf="!person.pet">No</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
